@@ -1,32 +1,37 @@
-# _Sample project_
+# IPSC-Drill-Laser
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+IPSC-Drill-Laser is an upcoming open-source IPSC laser target simulation system based on the ESP32 platform. It aims to provide a low-cost, safe, and effective dry-fire training tool for practical shooting enthusiasts.
 
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
+> ⚠️ **Project Status: Planning Stage**  
+> This repository has been initialized for future development.  
+> Currently, the project is in the **concept and design** phase. No working code has been implemented yet.
 
+## 🧩 Planned Features
 
+- Laser hit detection using light sensors
+- Scoring and feedback via onboard display
+- Configurable modes: static, timed, drill simulation
+- Target function: paper, popper, no-shoot, stop plate
+- Wi-Fi or BLE connectivity for logging or remote control
+- Optional support for sound/LED feedback
 
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
+## 🛠 Planned Hardware
 
-## Example folder contents
+- ESP32 development board
+- Laser sensor module (e.g. photodiode or LDR)
+- 0.96" OLED display (or LCD1602)
+- 3D printed target frame
+- Optional: buzzer, RGB LED, power management circuit
 
-The project **sample_project** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
+## 📅 Roadmap
 
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
-files that provide set of directives and instructions describing the project's source files and targets
-(executable, library, or both). 
+| Phase              | Status     |
+|--------------------|------------|
+| Initial concept    | ✅ Complete |
+| Hardware selection | 🔄 In progress |
+| Firmware development | ⏳ Not started |
+| Prototype testing  | ⏳ Not started |
 
-Below is short explanation of remaining files in the project folder.
+## 📄 License
 
-```
-├── CMakeLists.txt
-├── main
-│   ├── CMakeLists.txt
-│   └── main.c
-└── README.md                  This is the file you are currently reading
-```
-Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
-They are not used or needed when building with CMake and idf.py.
+This project will be released under the **GPL v3 License** once development begins.
